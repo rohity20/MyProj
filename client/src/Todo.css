@@ -1,0 +1,45 @@
+.App {
+    text-align: center;
+  }
+/* .itemlist {
+     background-color: rgb(226, 246, 16);
+     color: rgb(22, 95, 164);
+  
+  } */
+
+/* Add the following CSS to display items across rows and prevent text overflow */
+
+/* Style the container */
+.itemlist {
+   display: flex;
+   flex-wrap: wrap; /* Allow items to wrap to the next row */
+   gap: 10px;
+   
+ }
+ 
+ /* Style each item */
+ .itemlist > div {
+   border: 1px solid #4e0303;
+   padding: 10px;
+   border-radius: 8px;
+   background-color: #ebe413;
+   width: 300px;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 10px; /* Add margin to separate rows */
+   margin-left: 25px;
+   padding-bottom: 0px;
+ }
+ 
+ /* Style the item content to prevent overflow */
+ .itemlist span {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+ 
+ .itemlist button {
+   margin-top: 15px;
+ }

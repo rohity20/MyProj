@@ -1,0 +1,9 @@
+.banner {
+    background-position: center;
+    background-color: rgba(51, 158, 151, 0.66);
+  }
+
+  .banner-inner {
+    background-position: center;
+    background-color: rgba(6, 41, 100, 0.66);
+  }

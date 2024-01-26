@@ -14,11 +14,13 @@ app.use(cors());
 app.use('/', userRoute);
 app.use('/', ItemRoute);
 
+DATABASE= "mongodb+srv://2020rohityadav:n2m2BcifvtsAp1Rr@cluster0.p8tskvl.mongodb.net/?retryWrites=true&w=majority"
+
 const DB = process.env.DATABASE
 const PORT = process.env.PORT || 4000 
 
 
-mongoose.connect(DB,{
+mongoose.connect(DATABASE,{
     useUnifiedTopology:true,
     useNewUrlParser:true
 }).then(() => console.log("Database Connected")).catch((error) => console.log(error));

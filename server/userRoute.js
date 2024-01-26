@@ -2,6 +2,7 @@ const router = require('express').Router();
 const UserModel = require('./userModel');
 const JWT = require('jsonwebtoken');
 
+
 // Auth Middleware
 const requireSignIn = async (req, res, next) => {
   try {

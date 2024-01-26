@@ -20,7 +20,7 @@
  /* Style each item */
  .itemlist > div {
    border: 1px solid #4e0303;
-   padding: 10px;
+   padding: 0px;
    border-radius: 8px;
    background-color: #ebe413;
    width: 300px;
@@ -30,7 +30,7 @@
    align-items: center;
    margin-bottom: 10px; /* Add margin to separate rows */
    margin-left: 25px;
-   padding-bottom: 0px;
+
  }
  
  /* Style the item content to prevent overflow */
@@ -38,8 +38,10 @@
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
+   margin-top: 15px;
  }
  
  .itemlist button {
    margin-top: 15px;
+   /* margin-bottom: 15px; */
  }

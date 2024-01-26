@@ -25,9 +25,9 @@ router.get("/user-auth", requireSignIn, (req, res) => {
 // All Users
 router.get('/api/getAllUser', async (req, res) => {
   try {
-    // console.log("get user");
+    
     const user = await UserModel.find();
-    // console.log(user);
+    
     res.status(200).json(user)
 
   } catch (error) {
@@ -52,7 +52,7 @@ router.post('/api/createUser', async (req, res) => {
 
     })
     const User = await user.save();
-    console.log(User);
+   
     res.status(200).json(User)
 
   } catch (error) {

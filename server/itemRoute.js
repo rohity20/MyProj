@@ -8,7 +8,6 @@ router.post('/api/item', async(req, res)=> {
         })
         const final = await model.save();
         res.status(200).json(final);
-        console.log(final);
         
     } catch (error) {
         res.json(error);
@@ -24,8 +23,6 @@ router.get('/api/getitems', async(req, res)=> {
        
         res.status(200).json(allitem);
        
-        console.log(allitem);
-       
         
     } catch (error) {
         res.json(error);
@@ -36,7 +33,7 @@ router.get('/api/getitems', async(req, res)=> {
 router.put('/api/updateitem/:id', async(req, res)=> {
     try {
         const updateditem = await ItemModel.findByIdAndUpdate(req.params.id, {$set: {item: req.body.item}});
-        console.log('update call')
+        
         res.status(200).json(updateditem);
         
     } catch (error) {

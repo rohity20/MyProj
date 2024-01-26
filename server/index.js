@@ -17,9 +17,6 @@ app.use('/', ItemRoute);
 const DB = process.env.DATABASE
 const PORT = process.env.PORT || 4000 
 
-// console.log(DB)
-// mongoose.connect('mongodb://localhost/user-db').then(() => console.log("Database Connected")).catch((error) => console.log(error));
-
 mongoose.connect(DB).then(() => console.log("Database Connected")).catch((error) => console.log(error));
 
 app.listen(PORT, () => console.log("Server is running"));
